@@ -10,10 +10,13 @@ setup(
   url = 'https://github.com/testcara/SayLove',   # Provide either the link to your github or to your website
   download_url = 'https://github.com/testcara/SayLove/archive/v_01.tar.gz',    # I explain this later on
   keywords = ['First Python Package', 'Love Quotes'],   # Keywords that define your package best
-  #install_requires=[            # I get to this in a second
-  #        'validators',
+  include_package_data=True,
+  #package_dir={'SayLove': 'src/mypkg'},
+  package_data={'SayLove': ['*']},
+  install_requires=[            # I get to this in a second
+  #        'os',
   #        'beautifulsoup4',
-  #    ],
+  ],
   classifiers=[
     'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package    'Intended Audience :: Developers',      # Define that your audience are developers
     'Topic :: Utilities', # For more topics, please refer to https://pypi.org/pypi?%3Aaction=list_classifiers

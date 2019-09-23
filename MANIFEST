@@ -2,4 +2,5 @@
 setup.cfg
 setup.py
 SayLove/__init__.py
+SayLove/love_quotes
 SayLove/say_love.py
